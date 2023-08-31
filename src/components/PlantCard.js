@@ -11,7 +11,7 @@ function PlantCard({plants, onDelete, onUpdatePrice}) {
   }
 
   function handlePriceUpdate(event) { //Control the form by having the value derived from state change
-    const priceInput= parseInt(event.target.value)
+    const priceInput= parseFloat(event.target.value)
     setUpdatePrice(priceInput)
   }
 
